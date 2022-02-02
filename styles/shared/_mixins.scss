@@ -1,0 +1,28 @@
+// MIXINS
+@mixin background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin about-animation($animationType) {
+    -webkit-animation: $animationType;
+       -moz-animation: $animationType;
+        -ms-animation: $animationType;
+         -o-animation: $animationType;
+            animation: $animationType;
+}
+
+@mixin animation-fill-mode($animationMode) {
+    -webkit-animation-fill-mode: $animationMode;
+       -moz-animation-fill-mode: $animationMode;
+            animation-fill-mode: $animationMode;
+}
+
+@mixin animation-delay($delayDuration) {
+    -webkit-animation-delay: $delayDuration;
+       -moz-animation-delay: $delayDuration;
+            animation-delay: $delayDuration;
+}
+  
