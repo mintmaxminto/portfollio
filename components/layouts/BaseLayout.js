@@ -4,8 +4,9 @@ import Head from 'next/head';
 
 
 const BaseLayout = (props) => {
-        const { children, className, isAuthenticated, user, isSiteOwner, title, cannonical } = props;
+        const { children, className, isAuthenticated, user, isSiteOwner, cannonical } = props;
         const headerType = props.headerType || 'default';
+        const title = props.title || 'Waqas Hassan Portfolio';
         return (
             <React.Fragment>
                 <Head>
