@@ -17,6 +17,7 @@ class UserBlogsDashboard extends React.Component {
 
         try {
             blogs = await getUserBlogs(req);
+            console.log(blogs);
         } catch (error) {
             console.error(error);
         }

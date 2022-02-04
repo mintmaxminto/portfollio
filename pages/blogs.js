@@ -110,6 +110,11 @@ class Blog extends React.Component {
                         </Container>
                     </footer>
                 </BasePage>
+                <style jsx>
+                    {`
+                        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css");
+                    `}
+                </style>
             </BaseLayout>
         )
     }

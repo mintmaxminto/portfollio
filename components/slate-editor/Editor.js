@@ -106,6 +106,11 @@ export default class SlateEditor extends React.Component {
                 <ControllMenu isLoading={isLoading} save={() => this.save()}></ControllMenu>
                 {children}
                 <HoverMenu innerRef={menu => (this.menu = menu)} editor={editor}/>
+                <style jsx>
+                    {`
+                        @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+                    `}
+                </style>
             </React.Fragment>
         )
     }
